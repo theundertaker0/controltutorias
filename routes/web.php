@@ -15,14 +15,9 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::resource("carreras", CarreraController::class);
 
 Auth::routes();
-
+Route::get('/',[HomeController::class, 'index'] );
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::resource("carreras", CarreraController::class)->except(['show']);
 Route::get('getcarreras', [CarreraController::class,'getCarreras']);
