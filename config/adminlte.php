@@ -228,12 +228,18 @@ return [
         // Navbar items:
        
         // Sidebar items:
-       'MENÚ PRINCIPAL',
+       'CATÁLOGOS',
         [
             'text'        => 'Carreras',
             'url'         => 'carreras',
             'icon'        => 'fas fa-fw fa-file-signature',
         ],
+        [
+            'text'        => 'Semestres',
+            'url'         => 'semestres',
+            'icon'        => 'fas fa-project-diagram',
+        ],
+        'REPORTES'
     ],
 
     /*
